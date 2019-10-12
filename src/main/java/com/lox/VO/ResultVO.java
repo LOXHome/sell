@@ -1,0 +1,19 @@
+package com.lox.VO;
+
+import lombok.Data;
+
+/**
+ * @author LOX
+ * @description http请求返回的最外层对象
+ * @date 2019/10/8
+ */
+@Data
+public class ResultVO<T> {
+     /**错误码*/
+     private Integer code;
+     //提示信息
+     private  String msg;
+     //返回的内容
+     private  T data;
+
+}
